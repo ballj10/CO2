@@ -7,15 +7,17 @@
     tools:context=".HomePage">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="68dp"
-        android:layout_height="43dp"
+        android:id="@+id/characters"
+        android:layout_width="155dp"
+        android:layout_height="81dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Button"
+        android:text="Characters"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
