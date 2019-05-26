@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
+
         <activity android:name=".roll"></activity>
         <activity
             android:name=".CharacterInfo"
             android:label="@string/title_activity_character_info" />
-=======
+
         <activity
             android:name=".SpellListActivity"
             android:label="@string/title_spell_list"
@@ -28,7 +28,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.co2.SpellListActivity" />
         </activity>
->>>>>>> Spells
+
         <activity android:name=".CharacterSelection" />
         <activity android:name=".HomePage" />
         <activity
