@@ -17,7 +17,6 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
         Button character = (Button) findViewById(characters);
         character.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -25,17 +24,6 @@ public class HomePage extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-        Button roller = (Button) findViewById(R.id.roller);
-        roller.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View e) {
-                Intent k = new Intent(getApplicationContext(), roll.class);
-                startActivity(k);
-            }
-        });
-
-
-
     }
 
 

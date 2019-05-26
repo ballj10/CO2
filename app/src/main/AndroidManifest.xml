@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
 
         <activity android:name=".roll"></activity>
         <activity
@@ -29,6 +30,11 @@
                 android:value="com.example.co2.SpellListActivity" />
         </activity>
 
+=======
+        <activity
+            android:name=".CharacterInfo"
+            android:label="@string/title_activity_character_info"></activity>
+>>>>>>> parent of 311bdfa... here goes
         <activity android:name=".CharacterSelection" />
         <activity android:name=".HomePage" />
         <activity
