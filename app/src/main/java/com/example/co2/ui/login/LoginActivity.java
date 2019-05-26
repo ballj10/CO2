@@ -1,9 +1,11 @@
 package com.example.co2.ui.login;
 
+import android.animation.Animator;
 import android.app.Activity;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
@@ -17,6 +19,7 @@ import android.view.animation.AnimationUtils;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
+    Animation rotateAnimation;
+    ImageView icon2;
     Animation frombottom;
 
     @Override
@@ -42,8 +47,13 @@ public class LoginActivity extends AppCompatActivity {
         final Button loginButton = findViewById(R.id.loginBtn);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
 
+        icon2 = (ImageView) findViewById(R.id.icon2);
+
+
         frombottom = AnimationUtils.loadAnimation(this,R.anim.frombottom);
         loginButton.setAnimation(frombottom);
+
+        rotateAnimation();
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
@@ -119,6 +129,12 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+    }
+
+    private void rotateAnimation() {
+         rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate);
+        icon2.startAnimation(rotateAnimation);
     }
 
 
