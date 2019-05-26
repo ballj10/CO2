@@ -40,7 +40,7 @@
         android:layout_marginEnd="327dp"
         android:layout_marginRight="327dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/int"
+        android:background="@drawable/inte"
         android:gravity="center_horizontal"
         android:textSize="12sp"
         app:fontFamily="sans-serif-light"
@@ -147,37 +147,38 @@
         android:id="@+id/spellsNav"
         android:layout_width="0dp"
         android:layout_height="66dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Spells"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/characterNav"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/characterNav"
         android:layout_width="0dp"
         android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="Character Info"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/combatNav" />
+        app:layout_constraintEnd_toStartOf="@+id/combatNav"
+        app:layout_constraintStart_toEndOf="@+id/spellsNav" />
 
     <Button
         android:id="@+id/combatNav"
         android:layout_width="0dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Combat"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="659dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/con"

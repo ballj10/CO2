@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -49,7 +50,17 @@ public class HomePage extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
+
         });
+
+        Button roller = (Button) findViewById(R.id.roller);
+        roller.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View e) {
+                Intent k = new Intent(getApplicationContext(), roll.class);
+                startActivity(k);
+            }
+        });
+
     }
 
     private void initlist() {
