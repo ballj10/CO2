@@ -1,33 +1,26 @@
 package com.example.co2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.view.View;
+import android.widget.Button;
 
 public class CharacterSelection extends AppCompatActivity {
-
-    ListView listView;
-    List characters = new ArrayList();
-    ArrayAdapter adapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character_selection);
+        Button Btn1 = findViewById(R.id.btn);
 
-        listView = (ListView)findViewById(R.id.list_view);
-
-        characters.add("Jonathan");
-        characters.add("Carlos");
-        characters.add("Garfield");
-
-        adapter = new ArrayAdapter(CharacterSelection.this, android.R.layout.simple_list_item_1, characters);
-        listView.setAdapter(adapter);
+        Btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), CharacterInfo2.class);
+                startActivity(i);
+            }
+        });
     }
 
 }
