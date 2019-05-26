@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharacterInfo">
+
+
+    <TextView
+        android:id="@+id/wisdom2"
+        android:layout_width="68dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="327dp"
+        android:layout_marginRight="327dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal"
+        android:text="Wisdom"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/charisma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intelligence" />
+
+    <TextView
+        android:id="@+id/conMod"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="+0"
+        app:layout_constraintBottom_toBottomOf="@+id/con"
+        app:layout_constraintEnd_toEndOf="@+id/con"
+        app:layout_constraintStart_toStartOf="@+id/con"
+        app:layout_constraintTop_toTopOf="@+id/con" />
+
+
+    <TextView
+        android:id="@+id/intelligence"
+        android:layout_width="68dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="327dp"
+        android:layout_marginRight="327dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:text="Intelligence"
+        android:textSize="12sp"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/wisdom2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/border"
+        app:layout_constraintTop_toBottomOf="@+id/con" />
+
+    <TextView
+        android:id="@+id/dexMod3"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="@+id/dex"
+        app:layout_constraintEnd_toEndOf="@+id/dex"
+        app:layout_constraintStart_toStartOf="@+id/dex"
+        app:layout_constraintTop_toTopOf="@+id/dex" />
+
+    <TextView
+        android:id="@+id/charisma"
+        android:layout_width="68dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="327dp"
+        android:layout_marginRight="327dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal"
+        android:text="Charisma"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/spellsNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wisdom2" />
+
+    <TextView
+        android:id="@+id/charismaMod"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="+4"
+        app:layout_constraintBottom_toBottomOf="@+id/charisma"
+        app:layout_constraintEnd_toEndOf="@+id/charisma"
+        app:layout_constraintStart_toStartOf="@+id/charisma"
+        app:layout_constraintTop_toTopOf="@+id/charisma" />
+
+    <TextView
+        android:id="@+id/dex"
+        android:layout_width="68dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="327dp"
+        android:layout_marginRight="327dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal"
+        android:text="Dexterity"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/con"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strength" />
+
+    <TextView
+        android:id="@+id/strengthMod2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="+3"
+        app:layout_constraintBottom_toBottomOf="@+id/strength"
+        app:layout_constraintEnd_toEndOf="@+id/strength"
+        app:layout_constraintStart_toStartOf="@+id/strength"
+        app:layout_constraintTop_toTopOf="@+id/strength" />
+
+    <TextView
+        android:id="@+id/strength"
+        android:layout_width="72dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal"
+        android:text="Strength"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/dex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/spellsNav"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="Spells"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/characterNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <Button
+        android:id="@+id/characterNav"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="Character Info"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/combatNav"
+        app:layout_constraintStart_toEndOf="@+id/spellsNav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/combatNav"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Combat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/characterNav"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/con"
+        android:layout_width="68dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="327dp"
+        android:layout_marginRight="327dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:gravity="center_horizontal"
+        android:text="Constitution"
+        android:textSize="11sp"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/intelligence"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dex" />
+
+    <TextView
+        android:id="@+id/intMod"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="+0"
+        app:layout_constraintBottom_toBottomOf="@+id/intelligence"
+        app:layout_constraintEnd_toEndOf="@+id/intelligence"
+        app:layout_constraintStart_toStartOf="@+id/intelligence"
+        app:layout_constraintTop_toTopOf="@+id/intelligence" />
+
+
+
+    <TextView
+        android:id="@+id/wisdomMod"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="@+id/wisdom2"
+        app:layout_constraintEnd_toEndOf="@+id/wisdom2"
+        app:layout_constraintStart_toStartOf="@+id/wisdom2"
+        app:layout_constraintTop_toTopOf="@+id/wisdom2" />
+
+    <TextView
+        android:id="@+id/personalInfo"
+        android:layout_width="231dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border"
+        android:text="Personality Traits: A very good girl.\nIdeals: Treats, naps and walks\nBonds: Every person I meet!\nFlaws: Always in need of a tummy rub."
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toTopOf="@+id/characterNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/strength"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+
+</android.support.constraint.ConstraintLayout>
