@@ -5,6 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".CharacterInfo">
 
 
@@ -19,25 +20,14 @@
         android:layout_marginRight="327dp"
         android:layout_marginBottom="10dp"
 
+        android:background="@drawable/wis"
         android:gravity="center_horizontal"
-        android:text="Wisdom"
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toTopOf="@+id/charisma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intelligence" />
-
-    <TextView
-        android:id="@+id/conMod"
-        android:layout_width="31dp"
-        android:layout_height="32dp"
-        android:gravity="center"
-        android:text="+0"
-        app:layout_constraintBottom_toBottomOf="@+id/con"
-        app:layout_constraintEnd_toEndOf="@+id/con"
-        app:layout_constraintStart_toStartOf="@+id/con"
-        app:layout_constraintTop_toTopOf="@+id/con" />
 
 
     <TextView
@@ -50,27 +40,16 @@
         android:layout_marginEnd="327dp"
         android:layout_marginRight="327dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/int"
         android:gravity="center_horizontal"
-        android:text="Intelligence"
         android:textSize="12sp"
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toTopOf="@+id/wisdom2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/con" />
-
-    <TextView
-        android:id="@+id/dexMod3"
-        android:layout_width="31dp"
-        android:layout_height="32dp"
-        android:gravity="center"
-        android:text="+1"
-        app:layout_constraintBottom_toBottomOf="@+id/dex"
-        app:layout_constraintEnd_toEndOf="@+id/dex"
-        app:layout_constraintStart_toStartOf="@+id/dex"
-        app:layout_constraintTop_toTopOf="@+id/dex" />
 
     <TextView
         android:id="@+id/charisma"
@@ -83,8 +62,8 @@
         android:layout_marginRight="327dp"
 
         android:layout_marginBottom="8dp"
+        android:background="@drawable/cha"
         android:gravity="center_horizontal"
-        android:text="Charisma"
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toTopOf="@+id/spellsNav"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,8 +93,8 @@
         android:layout_marginRight="327dp"
         android:layout_marginBottom="10dp"
 
+        android:background="@drawable/dex"
         android:gravity="center_horizontal"
-        android:text="Dexterity"
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toTopOf="@+id/con"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,15 +103,16 @@
         app:layout_constraintTop_toBottomOf="@+id/strength" />
 
     <TextView
-        android:id="@+id/strengthMod2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/dexMod3"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
         android:gravity="center"
-        android:text="+3"
-        app:layout_constraintBottom_toBottomOf="@+id/strength"
-        app:layout_constraintEnd_toEndOf="@+id/strength"
-        app:layout_constraintStart_toStartOf="@+id/strength"
-        app:layout_constraintTop_toTopOf="@+id/strength" />
+        android:text="+1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dex"
+        app:layout_constraintEnd_toEndOf="@+id/dex"
+        app:layout_constraintStart_toStartOf="@+id/dex"
+        app:layout_constraintTop_toTopOf="@+id/dex" />
 
     <TextView
         android:id="@+id/strength"
@@ -143,12 +123,25 @@
         android:layout_marginTop="100dp"
         android:layout_marginBottom="10dp"
 
+        android:background="@drawable/str"
         android:gravity="center_horizontal"
-        android:text="Strength"
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toTopOf="@+id/dex"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/strengthMod2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="+3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/strength"
+        app:layout_constraintEnd_toEndOf="@+id/strength"
+        app:layout_constraintStart_toStartOf="@+id/strength"
+        app:layout_constraintTop_toTopOf="@+id/strength" />
 
     <Button
         android:id="@+id/spellsNav"
@@ -196,8 +189,8 @@
         android:layout_marginEnd="327dp"
         android:layout_marginRight="327dp"
         android:layout_marginBottom="5dp"
+        android:background="@drawable/con1"
         android:gravity="center_horizontal"
-        android:text="Constitution"
         android:textSize="11sp"
         app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toTopOf="@+id/intelligence"
@@ -207,16 +200,28 @@
         app:layout_constraintTop_toBottomOf="@+id/dex" />
 
     <TextView
+        android:id="@+id/conMod"
+        android:layout_width="31dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="+0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/con"
+        app:layout_constraintEnd_toEndOf="@+id/con"
+        app:layout_constraintStart_toStartOf="@+id/con"
+        app:layout_constraintTop_toTopOf="@+id/con" />
+
+    <TextView
         android:id="@+id/intMod"
         android:layout_width="31dp"
         android:layout_height="32dp"
         android:gravity="center"
         android:text="+0"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/intelligence"
         app:layout_constraintEnd_toEndOf="@+id/intelligence"
         app:layout_constraintStart_toStartOf="@+id/intelligence"
         app:layout_constraintTop_toTopOf="@+id/intelligence" />
-
 
 
     <TextView
@@ -225,6 +230,7 @@
         android:layout_height="32dp"
         android:gravity="center"
         android:text="+1"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/wisdom2"
         app:layout_constraintEnd_toEndOf="@+id/wisdom2"
         app:layout_constraintStart_toStartOf="@+id/wisdom2"
